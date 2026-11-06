@@ -1,0 +1,39 @@
+{
+  "name": "@igor-guari/pi-research",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Read-only research profile for Pi: answer-focused prompt, whole-file reads, batched parallel searches and repeated-read rejection. Measured against the Cursor CLI on the same model.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "research",
+    "code-search",
+    "ripgrep",
+    "cursor"
+  ],
+  "author": "Igor Guariroba",
+  "license": "MIT",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorGuariroba/pi-research.git"
+  },
+  "homepage": "https://github.com/IgorGuariroba/pi-research#readme",
+  "scripts": {
+    "test": "node --test --test-timeout=10000 test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
